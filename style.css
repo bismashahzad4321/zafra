@@ -1,0 +1,540 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+
+}
+
+.headerFirstSection {
+    display: flex;
+    flex-direction: row;
+    background-color: #52332b;
+    padding: 8px;
+    align-items: center;
+    gap: 10px;
+    padding-left: 80px;
+    height: 70px;
+
+}
+
+.headerFirstSection p {
+    color: white;
+    font-size: 14px;
+}
+
+.headerFirstSection i {
+    color: white;
+}
+
+.socialSection {
+    display: flex;
+    gap: 20px;
+    padding-left: 40px;
+}
+
+.socialSection :hover {
+    background-color: #3d2520;
+}
+
+.socialSection i {
+
+    color: white;
+
+
+}
+
+.socialSection i:hover {
+    cursor: pointer;
+    background-color: #3d2520;
+}
+
+.secondSocialSection {
+    display: flex;
+    gap: 20px;
+    padding-left: 400px;
+}
+
+.secondSocialSection i {
+    color: white;
+}
+
+.secondSocialSection :hover {
+    cursor: pointer;
+}
+
+.para {
+    display: flex;
+
+    text-align: center;
+    background-color: #3d2520;
+    padding: 10px;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.para p {
+
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.para:hover {
+    cursor: pointer;
+    background-color: #6e2314;
+}
+
+/* Reponsive  header section*/
+@media screen and (max-width: 1000px) {
+    .headerFirstSection {
+        display: none;
+    }
+}
+
+.navbarSection {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 10px;
+    margin: 0;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+.logo :hover {
+    cursor: pointer;
+}
+
+.navbarSection ul {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+}
+
+.navbarSection ul :hover {
+    cursor: pointer;
+}
+
+.navbarSection ul li {
+    color: white;
+    list-style: none;
+}
+
+.callIcon {
+    display: flex;
+    color: white;
+    gap: 10px;
+}
+
+.callIcon i {
+    font-size: 13px;
+}
+
+.callIcon :hover {
+    cursor: pointer;
+}
+
+/* Reponsive second header section(navbar) */
+@media screen and (max-width: 1000px) {
+
+    .navbarSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+        gap: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .navbarSection {
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        justify-content: start;
+        align-items: start;
+        text-align: start;
+        padding: 0px;
+        gap: 5x;
+    }
+
+    .navbarSection ul {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .callIcon {
+        display: none;
+    }
+}
+
+/* Hero Section */
+.heroSection {
+    background-image: url(./assets/hero\ section/hero-section.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    margin: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 50%;
+    padding-left: 100px;
+    gap: 0px;
+}
+
+.heroSection p {
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.2;
+    font-family: 'caudex', sans-serif;
+
+}
+
+.heroSection h1 {
+    font-size: 70px;
+    margin: o;
+    line-height: 1;
+    font-family: 'caudex', sans-serif;
+}
+
+.heroSectionPara {
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
+.buttonn {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 30px;
+    justify-content: start;
+}
+
+.buttonOne button {
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #52332b;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 1;
+    margin: 0;
+    font-family: 'roboto';
+}
+
+.buttonOne :hover {
+    background-color: #6e2314;
+    cursor: pointer;
+}
+
+.buttonTwo button {
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 1;
+    margin: 0;
+    font-family: 'roboto';
+}
+
+.buttonTwo :hover {
+    background-color: #d6d3d2;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+    .heroSection {
+        background-image: url(./assets/hero\ section/hero-section.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        margin: 0;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30%;
+        padding-left: 100px;
+        gap: 0px;
+    }
+
+    .heroSection p {
+        font-size: 15px;
+        margin: 0;
+        line-height: 1.6;
+
+    }
+
+    .heroSection h1 {
+        font-size: 30px;
+        margin: o;
+        line-height: 1.5;
+    }
+
+    .heroSectionPara {
+        font-size: 10px;
+        font-weight: 200;
+        line-height: 1.8;
+    }
+
+    .buttonn {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 20px;
+        justify-content: start;
+    }
+
+    .buttonOne button {
+        padding: 15px 25px;
+        border: none;
+        border-radius: 10px;
+        background-color: #52332b;
+        color: white;
+        font-size: 12px;
+        letter-spacing: 0px;
+        line-height: 1;
+        margin: 0;
+        font-family: 'roboto';
+    }
+
+    .buttonOne :hover {
+        background-color: #6e2314;
+        cursor: pointer;
+    }
+
+    .buttonTwo button {
+        padding: 15px 25px;
+        border: none;
+        border-radius: 10px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        font-size: 12px;
+        letter-spacing: 0px;
+        line-height: 1;
+        margin: 0;
+        font-family: 'roboto';
+    }
+
+    .buttonTwo :hover {
+        background-color: #d6d3d2;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .heroSection {
+        background-image: url(./assets/hero\ section/hero-section.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        margin: 0;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 10%;
+        padding-left: 10px;
+        gap: 0px;
+    }
+
+    .heroSection p {
+        font-size: 15px;
+        margin: 0;
+        line-height: 1.6;
+
+    }
+
+    .heroSection h1 {
+        font-size: 30px;
+        margin: o;
+        line-height: 1.5;
+    }
+
+    .heroSectionPara {
+        font-size: 10px;
+        font-weight: 200;
+        line-height: 1.8;
+    }
+
+    .buttonn {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 20px;
+        justify-content: start;
+    }
+
+    .buttonOne button {
+        padding: 15px 25px;
+        border: none;
+        border-radius: 10px;
+        background-color: #52332b;
+        color: white;
+        font-size: 10px;
+        letter-spacing: 0px;
+        line-height: 1;
+        margin: 0;
+        font-family: 'roboto';
+    }
+
+    .buttonOne :hover {
+        background-color: #6e2314;
+        cursor: pointer;
+    }
+
+    .buttonTwo button {
+        padding: 15px 25px;
+        border: none;
+        border-radius: 10px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        font-size: 10px;
+        letter-spacing: 0px;
+        line-height: 1;
+        margin: 0;
+        font-family: 'roboto';
+    }
+
+    .buttonTwo :hover {
+        background-color: #d6d3d2;
+        cursor: pointer;
+    }
+}
+
+/* Company About Us Section */
+.companyAboutUs {
+    display: flex;
+    flex-direction: row;
+    padding: 8%;
+    gap: 100px;
+}
+
+.imageSection {
+    position: relative;
+}
+
+.secondImage {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+}
+
+.companyContentSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.companyContentSection p1 {
+
+    color: #52332b;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.companyContentSection h2 {
+    font-size: 50px;
+    margin: 0;
+    font-family: 'caudex', serif;
+}
+
+.companyContentPara {
+    color: rgb(96, 94, 94);
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    text-align: start;
+    line-height: 26px;
+}
+
+.signatureButton {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 110px;
+    margin: 0;
+    line-height: 1px;
+    padding-top: 10px;
+}
+
+.signatureSection {
+    font-size: 28px;
+    color: #3d2520;
+    font-family: 'caudex', serif;
+    font-weight: 900;
+}
+/* Responsice Comapny About Section */
+@media screen and (max-width:780px) {
+    .companyAboutUs {
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+    gap: 100px;
+}
+.firstImage img{
+height: auto;
+width: 100%;
+}
+.secondImage img{
+    height: auto;
+    width: 100%;
+}
+}
+@media screen and (max-width:320px){
+    .companyContentSection h2{
+font-size: 26px;
+    }
+    .companyContentPara{
+        font-size: 10px;
+        color: rgb(55, 54, 54);
+        font-weight: 400;
+        line-height: 1rem;
+    }
+    .signatureButton{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 0;
+        justify-content: start;
+        align-items: start;
+    }
+}
