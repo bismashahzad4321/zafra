@@ -501,34 +501,40 @@ body {
     font-family: 'caudex', serif;
     font-weight: 900;
 }
+
 /* Responsice Comapny About Section */
 @media screen and (max-width:780px) {
     .companyAboutUs {
-    display: flex;
-    flex-direction: column;
-    padding: 8%;
-    gap: 100px;
-}
-.firstImage img{
-height: auto;
-width: 100%;
-}
-.secondImage img{
-    height: auto;
-    width: 100%;
-}
-}
-@media screen and (max-width:320px){
-    .companyContentSection h2{
-font-size: 26px;
+        display: flex;
+        flex-direction: column;
+        padding: 8%;
+        gap: 100px;
     }
-    .companyContentPara{
+
+    .firstImage img {
+        height: auto;
+        width: 100%;
+    }
+
+    .secondImage img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .companyContentSection h2 {
+        font-size: 26px;
+    }
+
+    .companyContentPara {
         font-size: 10px;
         color: rgb(55, 54, 54);
         font-weight: 400;
         line-height: 1rem;
     }
-    .signatureButton{
+
+    .signatureButton {
         display: flex;
         flex-direction: column;
         padding: 0;
@@ -538,3 +544,193 @@ font-size: 26px;
         align-items: start;
     }
 }
+
+/* Services Section */
+.serviceContent {
+    background-color: #f7f5f1;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 200px;
+}
+
+.serviceContentPara {
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-top: 15px;
+    line-height: 1.75rem;
+}
+
+.serviceContent p {
+    color: #52332b;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.serviceContent h3 {
+    font-size: 50px;
+    margin: 0;
+    font-family: 'caudex', serif;
+}
+
+.serviceContent p1 {
+    color: rgb(96, 94, 94);
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    text-align: start;
+    line-height: 26px;
+}
+
+.serviceCardSection {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.fiestCard {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    padding: 30px;
+}
+
+.fiestCard img {
+    height: 40px;
+    width: 40px;
+    margin: 0;
+}
+
+.fiestCard h5 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: black;
+    font-family: 'Caudex', serif;
+    cursor: pointer;
+}
+
+.fiestCard p {
+
+    color: #101010;
+    margin-top: 0px;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 1.50rem;
+    cursor: pointer;
+}
+
+.fiestCard a {
+    color: #3d2520;
+    text-decoration: none;
+}
+
+/* Responsive Sevice Section */
+@media screen and (max-width:780px) {
+    .serviceCardSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .serviceContentPara {
+        padding: 0px;
+    }
+
+    .fiestCard p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .serviceContent {
+        padding: 10px;
+    }
+
+    .serviceContent p {
+        font-size: 13px;
+    }
+
+    .serviceContent h3 {
+        font-size: 25px;
+    }
+
+    .serviceContentPara {
+        font-size: 1px;
+        line-height: 1rem;
+    }
+}
+
+.formImage {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    background-color: #52332b;
+    margin-right: 100px;
+    margin-left: 100px;
+    justify-content: space-between;
+}
+.formAndCntent{
+    padding-left: 40px;
+    width: 60%;
+}
+.formContent p {
+    font-family: 'caudex', serif;
+    color: white;
+    font-size: 19px;
+}
+
+.formContent h1 {
+
+    font-family: 'caudex', serif;
+    color: white;
+    font-size: 39px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Form Image */
+.formrightiamge img{
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+
