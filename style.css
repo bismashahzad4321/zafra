@@ -678,11 +678,16 @@ body {
     margin-right: 100px;
     margin-left: 100px;
     justify-content: space-between;
+    margin-top: -150px;
+
+
 }
-.formAndCntent{
+
+.formAndCntent {
     padding-left: 40px;
-    width: 60%;
+    width: 45%;
 }
+
 .formContent p {
     font-family: 'caudex', serif;
     color: white;
@@ -696,41 +701,158 @@ body {
     font-size: 39px;
 }
 
+.formMaking {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2px;
+    padding-right: 25px;
+    padding-bottom: 10px;
 
+}
 
+.formm {
+    background-color: #52332b;
+    padding: 15px;
 
+}
 
+.enterYourName {
+    background-color: #27140f;
+    border: none;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
 
+.formTwoParts {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-right: 10px;
+}
 
+.formm {
 
+    background-color: #27140f;
+    border: none;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* padding-right: 5px;
+    padding-left: 5px; */
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    color: gray;
+    display: inline-block;
+}
 
+.time {
+    background-color: #27140f;
+    padding: 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.buttonInnerCss {
+    background-color: #ffffff;
+    color: rgb(155, 69, 12);
+    padding: 15px;
+    justify-content: start;
+    text-align: center;
+    margin-top: 10px;
+    border: none;
+    border-radius: 15px;
+    font-family: 'roboto';
+    font-size: 15px;
+    cursor: pointer;
+}
 
 /* Form Image */
-.formrightiamge img{
+.formrightiamge img {
     padding: 0;
     width: 100%;
     height: auto;
 }
 
+@media screen and (max-width:720px) {
+    .formImage {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #52332b;
+        /* margin-right: 100px;
+    margin-left: 100px; */
+        justify-content: center;
+        align-items: center;
+        margin-top: -150px;
+    }
 
+    .formContent p {
+        font-family: 'caudex', serif;
+        color: white;
+        font-size: 19px;
+    }
+
+    .formContent h1 {
+
+        font-family: 'caudex', serif;
+        color: white;
+        font-size: 29px;
+    }
+
+    .formTwoParts {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+
+        /* margin-right: 10px; */
+    }
+
+    .formAndCntent {
+        padding: 10;
+        width: 100%;
+    }
+
+    .formrightiamge {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+
+    .formImage {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .formContent {
+        padding: 0;
+    }
+
+    .formContent p {
+        font-family: 'caudex', serif;
+        color: white;
+        font-size: 15px;
+    }
+
+    .formContent h1 {
+        font-size: 22px;
+    }
+
+    .formAndCntent {
+        padding: 10;
+        width: 100%;
+    }
+
+    .formrightiamge {
+        width: 100%;
+    }
+}
