@@ -445,6 +445,7 @@ body {
 
 .imageSection {
     position: relative;
+    width: 100%;
 }
 
 .secondImage {
@@ -457,6 +458,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 50%;
 }
 
 .companyContentSection p1 {
@@ -502,13 +504,26 @@ body {
     font-weight: 900;
 }
 
+.signatureSection p {
+    line-height: 2rem;
+}
+
 /* Responsice Comapny About Section */
 @media screen and (max-width:780px) {
     .companyAboutUs {
         display: flex;
         flex-direction: column;
-        padding: 8%;
-        gap: 100px;
+        gap: 70px;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .firstImage {
+        padding: 1px;
+        margin: 0;
     }
 
     .firstImage img {
@@ -519,6 +534,10 @@ body {
     .secondImage img {
         height: auto;
         width: 100%;
+    }
+
+    .companyContentSection {
+        padding: 0;
     }
 }
 
@@ -1195,69 +1214,319 @@ button:hover {
     font-family: 'roboto', serif;
 }
 
+.companyyContentSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.companyyContentSection p1 {
+
+    color: #52332b;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.companyyContentSection h2 {
+    font-size: 50px;
+    margin: 0;
+    font-family: 'caudex', serif;
+}
+
+.companyyContentPara {
+    color: rgb(96, 94, 94);
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    text-align: start;
+    line-height: 26px;
+}
+
 .starIcon {
     line-height: 3rem;
 }
+
 @media screen and (max-width:720px) {
-    .revewiAndContent{
-        display:flex;
+    .revewiAndContent {
+        display: flex;
         flex-direction: column;
     }
-    .avatarContent h4{
+
+    .avatarContent h4 {
         line-height: 1rem;
     }
+
     .testimonialBox {
-padding-left: 5px;
-    padding-right: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
-    .avatrSection{
+
+    .avatrSection {
         justify-content: end;
         align-items: center;
         gap: 8px;
     }
 }
+
 @media screen and (max-width:320px) {
-    .mainTestimonialsection{
+    .mainTestimonialsection {
         display: flex;
         flex-direction: column;
     }
-    .revewiAndContent{
+
+    .revewiAndContent {
         padding: 4px;
     }
+     .companyyContentSection{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1px;
+     }
+    .companyyContentSection p1{
+ font-size: 18px;
+    }
+     .companyyContentSection h2{
+ font-size: 28px;
+    }
+    .companyyContentSection p{
+       text-align: center;
+      
+    }
 }
-.offerMainSection{
+
+.offerMainSection {
     display: flex;
     flex-direction: row;
     background-color: #52332b;
+    padding: 0px;
 }
-.offerContentSection{
+
+.offerContentSection {
     display: flex;
     flex-direction: column;
     color: white;
-    padding-left: 90px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 40px;
     justify-content: center;
     align-items: start;
-    
+    padding-left: 90px;
+    padding-right: 70px;
+    width: 40%;
+    text-align: start;
+    align-items: start;
+    margin-top: 2px;
+
+
 }
-.offerContentSection p{
-  margin-bottom: 0;
-  font-size: 22px;
-  margin-bottom: 0;
+
+.offerContentSection p {
+    margin-bottom: 10;
+    font-size: 20px;
+    line-height: 1rem;
+    font-family: 'roboto', serif;
+    font-weight: 300;
+
+
 }
-.offerContentSection h1{
-   
-     font-size:71px;
-     font-weight: 400;
+
+.offerContentSection h1 {
+
+    font-size: 61px;
+    font-weight: 400;
+    font-family: 'caudex', serif;
+    margin: 2px;
 }
-.offerContentSection h5{
+
+.offerContentSection h5 {
     margin: 0;
-     line-height: 1.75rem;
-     font-size: 18pxx;
-     letter-spacing: 0.75px;
+    line-height: 1.75rem;
+    font-size: 14px;
+    letter-spacing: 0.75px;
 }
-.imageSection{
-    width: 50%;
+
+.imageSection {
+    width: 60%;
+}
+
+.imageSection img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:720px) {
+    .offerMainSection {
+        display: none;
+    }
+}
+
+.menuContentSection {
+    justify-content: center;
+    text-align: center;
+}
+
+.blogCard {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    cursor: pointer;
+    height: auto;
+
+}
+
+.blogFirstCard {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border: 1px solid rgb(151, 149, 149);
+
+}
+
+.blogFirstCard h2 {
+    padding: 10px;
+    margin: 0;
+}
+
+.blogFirstCard p {
+    padding: 10px;
+    margin: 0;
+}
+
+.blogPara {
+    font-size: 22px;
+    margin: 0;
+    color: #3d2520;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width:720px) {
+    .blogCard {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+    }
+
+    .blogFirstCard {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid rgb(151, 149, 149);
+
+    }
+}
+
+@media screen and (max-width:320px) {
+    .blogCard {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+    }
+
+    .blogFirstCard {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid rgb(151, 149, 149);
+
+    }
+}
+
+.youEmailAddress {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+
+}
+
+.inputt {
+    background-color: white;
+    /* padding: 10px 15px; */
+    border-radius: 4px;
+}
+
+.input {
+    border: 1px solid #ccc;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input::placeholder {
+    color: #888;
+    font-size: 15px;
+    text-align: start;
+    font-weight: 300;
+}
+
+.subscribeButton {
+    border: 1px solid #ccc;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    outline: none;
+    background-color: #3d2520;
+    margin-left: -20px;
+}
+
+.subscribeButton button {
+    color: #ffffff;
+    font-size: 15px;
+    text-align: start;
+    font-weight: 300;
+    background-color: #3d2520;
+    border: none;
+    cursor: pointer;
+}
+
+.subscribeSection {
+    background-color: #f3f1f0;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+@media screen and (max-width:720px) {
+    .subscribeButton {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .input {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:320px) {
+  .youEmailAddress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 3px;
+    gap: 10px;
+  }
 }
