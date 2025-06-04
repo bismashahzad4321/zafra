@@ -1043,22 +1043,221 @@ button:hover {
         margin: 0;
     }
 }
+
 @media screen and (max-width:720px) {
-    .menuMainSection{
-         display: flex;
+    .menuMainSection {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .menuMainSection {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+        padding-left: 9px;
+        padding-right: 9px;
+        padding-bottom: 2px;
+    }
+
+    .column h5 {
+        line-height: 1.75rem;
+    }
+}
+
+.onlineShop {
+    display: flex;
+    flex-direction: row;
+    /* padding: 300px; */
+    margin: 0;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.addCart {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f3f1f0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 90px;
+
+}
+
+.addCart img {
+    height: auto;
+    width: 100%;
+}
+
+.firstCart {
+    background-color: white;
+}
+
+.firstCart p {
+    font-family: 'caudex', serif;
+    font-size: 30px;
+    margin: 0;
+}
+
+.twoPrice {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.twoPrice p {
+    text-decoration: line-through;
+    font-weight: 100;
+    color: #bbb5b3;
+    font-size: 25px;
+    margin: 0;
+    padding: 10px;
+}
+
+.twoPrice h5 {
+    color: #4b4a4a;
+    font-size: 25px;
+    margin: 0;
+    padding: 10px;
+}
+
+@media screen and (max-width:720px) {
+    .onlineShop {
+        display: flex;
+        flex-direction: column;
+        /* padding: 300px; */
+    }
+}
+
+.revewiAndContent {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 40px;
+}
+
+.mainTestimonialsection {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+
+}
+
+.testimonialBox {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid rgb(150, 150, 150);
+    justify-content: center;
+    text-align: start;
+    align-items: start;
+    margin: 0px;
+    height: 350px;
+}
+
+.avatrSection {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    margin: 0px;
+    align-items: start;
+
+
+}
+
+.avatarContent {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+}
+
+.testimonialPara {
+    font-size: 12px;
+    text-align: start;
+}
+
+.testimonialPara {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.75rem;
+    color: rgb(99, 97, 97);
+    letter-spacing: 0.5px;
+    font-family: 'roboto', serif;
+}
+
+.starIcon {
+    line-height: 3rem;
+}
+@media screen and (max-width:720px) {
+    .revewiAndContent{
+        display:flex;
+        flex-direction: column;
+    }
+    .avatarContent h4{
+        line-height: 1rem;
+    }
+    .testimonialBox {
+padding-left: 5px;
+    padding-right: 5px;
+    }
+    .avatrSection{
+        justify-content: end;
+        align-items: center;
+        gap: 8px;
     }
 }
 @media screen and (max-width:320px) {
-    .menuMainSection{
-         display: flex;
+    .mainTestimonialsection{
+        display: flex;
+        flex-direction: column;
+    }
+    .revewiAndContent{
+        padding: 4px;
+    }
+}
+.offerMainSection{
+    display: flex;
+    flex-direction: row;
+    background-color: #52332b;
+}
+.offerContentSection{
+    display: flex;
     flex-direction: column;
-    padding-top: 5px;
-    padding-left: 9px;
-    padding-right: 9px;
-    padding-bottom: 2px;
-    }
-    .column h5{
-        line-height: 1.75rem;
-    }
+    color: white;
+    padding-left: 90px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 40px;
+    justify-content: center;
+    align-items: start;
+    
+}
+.offerContentSection p{
+  margin-bottom: 0;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.offerContentSection h1{
+   
+     font-size:71px;
+     font-weight: 400;
+}
+.offerContentSection h5{
+    margin: 0;
+     line-height: 1.75rem;
+     font-size: 18pxx;
+     letter-spacing: 0.75px;
+}
+.imageSection{
+    width: 50%;
 }
