@@ -1530,3 +1530,23 @@ button:hover {
     gap: 10px;
   }
 }
+.portfolio{
+    display: flex;
+    flex-direction: row;
+}
+.portfolioImg{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.portfolioImg img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and(max-width:720px) {
+    .portfolio{
+        display: flex;
+        flex-direction: column;
+    }
+}
