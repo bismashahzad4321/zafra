@@ -1281,21 +1281,25 @@ button:hover {
     .revewiAndContent {
         padding: 4px;
     }
-     .companyyContentSection{
+
+    .companyyContentSection {
         justify-content: center;
         align-items: center;
         text-align: center;
         padding: 1px;
-     }
-    .companyyContentSection p1{
- font-size: 18px;
     }
-     .companyyContentSection h2{
- font-size: 28px;
+
+    .companyyContentSection p1 {
+        font-size: 18px;
     }
-    .companyyContentSection p{
-       text-align: center;
-      
+
+    .companyyContentSection h2 {
+        font-size: 28px;
+    }
+
+    .companyyContentSection p {
+        text-align: center;
+
     }
 }
 
@@ -1522,31 +1526,105 @@ button:hover {
 }
 
 @media screen and (max-width:320px) {
-  .youEmailAddress{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 3px;
-    gap: 10px;
-  }
+    .youEmailAddress {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 3px;
+        gap: 10px;
+    }
 }
-.portfolio{
+
+.portfolio {
     display: flex;
     flex-direction: row;
 }
-.portfolioImg{
+
+.portfolioImg {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
-.portfolioImg img{
+
+.portfolioImg img {
     width: 100%;
     height: auto;
 }
 
 @media screen and(max-width:720px) {
-    .portfolio{
+    .portfolio {
         display: flex;
         flex-direction: column;
+    }
+}
+
+/* Footer */
+.firstPartfooter {
+}
+.footerLogo img{
+    width: 150px;
+}
+.footerCallIcon {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+
+}
+
+.footerCallIcon i {
+    background-color: #ffffff;
+    color: #52332b;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+.footerTwoNumber {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+
+}
+.footerTwoNumber p{
+    margin: 2px;
+    font-family: 'roboto' , serif;
+    font-size: 14px;
+    color: rgb(245, 242, 242);
+
+}
+.mainFooter{
+    display: flex;
+    flex-direction: row;
+    background-color: #52332b;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap:100px;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+.footerLogo p{
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 700;
+}
+.firstPartfooter p{
+    color: white;
+    cursor: pointer;
+}
+.callNumber p,i , img{
+    cursor: pointer;
+}
+@media screen and (max-width:720px) {
+    .mainFooter{
+        display: flex;
+        flex-direction: column;
+       gap: 20px;
+       align-items: start;
+       padding-left: 20px;
     }
 }
